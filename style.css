@@ -1,3 +1,14 @@
+h1 {
+    font-family: Bitter; 
+}
+h2 {
+    font-family: Lora;
+    
+}
+p {
+    font-family: Montserrat;
+    font-size: 16px;
+}
 .navbar {
     
     display: flex;
@@ -5,8 +16,61 @@
     flex-flow: row ;
     justify-content: flex-start;
     align-items: baseline;
-    background-color: black;
+    background-color: #3C4452;
+    width: 100%;
 }
 .navbar-item {
+    
+    color: white;
+    margin: 20px 30px;
+    border-color: blue; 
+    padding: 10px 10px 10px 10px;
+    font-size: 32px;
+}
+.navbar-item:hover {
+    color: yellow;
+}
+#infobox {
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    padding-top: 10%;
+}
+#about-container {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border: 1px solid black;
+    
+}
+#about-me {
+    width: 40%;
+    padding-right: 20%;
+    border: 1px solid black;
+    
+}
+#skills-section{
+    box-sizing: border-box;
+    border: 1px solid blue;
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%
+}
+.skills-container {
+    
+    width: 100%;
+    background-color: #DCDCDC;
+    
+}
+.skills {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.1em 1em 0.1em 1em;
     color: white;
 }
+.html { width: 20%; background-color: green;}
+.css { width: 20%; background-color: blue;}
+.scala {width: 50%; background-color: purple;}
+

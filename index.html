@@ -8,37 +8,65 @@
     <body>
 
 <!-- navigointi bar -->
-
+     <header> 
+         <nav>
         <div class="navbar">
             
             <h1 class="navbar-item">Pyry Seppälä</h1>
-            <a class="navbar-item" href="#">Home</a>
-            <a class="navbar-item">About</aclass="navbar-item">
-            <a class="navbar-item">Projects</aclass="navbar-item">
-            <a class="navbar-item">Contact</aclass="navbar-item">
+            <a class="navbar-item" href="#home">Home</a>
+            <a class="navbar-item" href="#about">About</a>
+            <a class="navbar-item">Projects</a>
+            <a class="navbar-item">Contact</a>
         </div>
+        </nav>
+    </header>
 
 <!-- "landingscreen"-->
 
-        <div>
-        </div>
-        <div>
+    <main>
+        <div id="home">
+        <div id="infobox">
           <h2>Hey, I'm Pyry Seppälä.</h2>
           <p>Full time information networks student in Aalto University, Finland.</p>
           <p>Interested in technology and society</p>
         </div>
         <div>
             <button><a href="#">View my projects!</a></button>
-        </div>   
-
-
-        
-
-        
-
-        <div>
-
         </div>
-    
+        </div>
+
+<!-- About section -->
+
+        <div id="about">
+            <h1>About</h1>
+        </div>
+        <div id="about-container">
+        <div id="about-me">
+            <h2>Who am I?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non lacus iaculis, imperdiet tellus ac, posuere elit. Integer bibendum vitae tellus et dignissim. Phasellus tincidunt feugiat nisi, vitae convallis risus varius at. Aliquam mattis vel lacus elementum molestie. Pellentesque scelerisque bibendum enim non accumsan
+
+            </p>
+        </div>
+
+        <!-- Skills section-->
+
+        <div id="skills-section">
+        <p>HTML</p>
+        <div class="skills-container">
+            <div class="skills html"><p>20%</p></div>
+        </div>
+        <p>CSS</p>
+        <div class="skills-container">
+            <div class="skills css"><p>20%</p></div>
+        </div>
+        
+        <p>SCALA</p>
+        <div class="skills-container">
+            <div class="skills scala"><p>50%</p></div>
+        </div>
+        </div>
+        </div>
+
+    </main>
     </body>
 </html>
