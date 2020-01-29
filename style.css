@@ -1,0 +1,12 @@
+.navbar {
+    
+    display: flex;
+    position: fixed;  
+    flex-flow: row ;
+    justify-content: flex-start;
+    align-items: baseline;
+    background-color: black;
+}
+.navbar-item {
+    color: white;
+}
