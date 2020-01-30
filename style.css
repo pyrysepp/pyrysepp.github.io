@@ -30,6 +30,13 @@ p {
 .navbar-item:hover {
     color: yellow;
 }
+.valiotsikko {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
 #infobox {
     display: flex;
     width: 30%;
@@ -73,4 +80,12 @@ p {
 .html { width: 20%; background-color: green;}
 .css { width: 20%; background-color: blue;}
 .scala {width: 50%; background-color: purple;}
-
+.line-container {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+.downwards-line {
+   border-left: 6px solid green;
+   height: 50%;
+}
