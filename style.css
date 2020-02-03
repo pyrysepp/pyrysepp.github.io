@@ -5,18 +5,25 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    font-family: 'Montserrat';
+}
+h2 {
+    font-family: 'Lora'
+}
+
 .navbar {
     
     display: flex;
     position: fixed; 
     top: 0;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: baseline;
     background-color: #3C4452;
     width: 100%;
-    border: 5px solid grey;
-    height: 110px;
+    border-bottom: 2px solid grey;
+    
     font-family: 'Lora';
     font-size: 50em;
 }
@@ -24,21 +31,22 @@ html {
     
     color: white;
     margin: 20px 30px;
-    border-color: blue; 
+    
     padding: 10px 10px 10px 10px;
     font-size: 32px;
     text-decoration: none;
 }
 .navbar-item:hover {
     border-bottom:3px solid #fff;
+   
     
 }
 .valiotsikko {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    margin-top: 5em;
+    margin-bottom: 1em;
     font-family: 'Bitter';    
     font-size: 4rem;
 }
@@ -50,12 +58,12 @@ html {
     box-sizing: border-box;
     display: flex;
     width: 50%;
-    
+    box-shadow: 10px 10px 2px 0px rgba(0,0,0,0.3);
     flex-direction: column;
     margin: 10% 10% 10% 10%;
     background-color: #59DEAF;
     padding: 10% 10% 10% 10%;
-    border-radius: 100px;
+    border-radius: 20px;
     
 }
 #infobox h2 {
@@ -64,9 +72,9 @@ html {
     }
 #infobox p {
     margin-top: 0.5em;
-    font-family: 'Montserrat';
+    
 }
-#infobox-button {
+.box-button {
     display: flex;
     margin-top: 40px;
     justify-content: center;
@@ -81,7 +89,7 @@ html {
     padding: 1em;
     text-decoration: none;
 }
-#infobox-button:hover {
+.box-button:hover {
     background-color: rgb(36, 111, 209)
 }
 
@@ -89,18 +97,18 @@ html {
     background-color: #3C4452;
     display: flex;
     width: 100%;
-    margin-top: 10em;
-    margin-bottom: 10em;   
+      
     justify-content: center;
     
 }
 #about-background {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 700px;
+    padding: 150px; 100px 150px 100px;
     background-color: #E8E8E8;
-    padding-top: 150px;
+    align-items: center;
     justify-content: center;
 }
 #about-container {
@@ -112,31 +120,42 @@ html {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
     width: 30%;
     height: 250px;
-    padding-right: 10%;
     
+    box-shadow: 10px 10px 2px 0px rgba(0,0,0,0.3);
     background-color: #59DEAF;
-    font-family: 'Montserrat';
     padding: 3em;
-    border-radius: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+
 }
 #about-me h2 {
     font-family: 'Lora';
-    font-size: 32px;
+    font-size: 3rem;
+    margin-bottom:10px;
+
 }
 #skills-section{
     
     background-color: #59DEAF;
     display: flex;
     flex-flow: column wrap;
-    width: 50%;
+    width: 30%;
     justify-content: center;
     align-items: center;
     margin-left: 50px;
-    border-radius: 50px;
-    font-family: 'Lora';
-    font-size: 32px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 2px 0px rgba(0,0,0,0.3);
+    
+    font-size: 2rem;
+    padding: 30px;
+}
+#skills-header {
+    margin-bottom: 30px;
+    font-size: 3rem;
 }
 .skills-bar {
     
@@ -150,7 +169,7 @@ html {
     box-sizing: border-box;
     display: flex;
     
-    padding: 0.1em 1em 0.1em 1em;
+    padding: 10px 20px 10px 20px;
     color: white;
     font-family: 'Lora';
     border-top-left-radius: 50px;
@@ -164,11 +183,7 @@ html {
 .css { width: 20%; background-color: blue;}
 .scala {width: 50%; background-color: purple;}
 
-.line-container {
-    display:flex;
-    width: 100%;
-    justify-content: center;
-}
+
 #projects-background {
     box-sizing: border-box;
     display: flex;
@@ -183,16 +198,33 @@ html {
     box-sizing: border-box;
     display: flex;
     justify-content: center ;
-    margin: 10em 15em 10em 15em;
+    padding: 10em 15em 10em 15em;
     flex-flow: row wrap;
 }
 .projects-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
     padding: 1em;
+    height: 300px;
+    width: 400px;
     transition: all .2s ease-in-out;
+    margin: 1em;
+    box-shadow: 10px 10px 2px 0px rgba(0,0,0,0.3);
+}
+.projects-content h2 {
+    font-family: 'Lora';
+    font-size: 32px;
+}
+
+.projects-content button {
+
 }
 .projects-content:hover {
     transform: scale(1.1);
-    filter: blur(2px);
+    
 }
 .downwards-line {
     border-left: 6px solid green;
