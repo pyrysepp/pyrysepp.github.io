@@ -1,30 +1,24 @@
+*{
+    margin: 0px;
+}
 html {
     scroll-behavior: smooth;
 }
-h1 {
-    font-family: Bitter;    
-    font-size: 100px;
-}
-h2 {
-    font-family: Lora;
-    font-size: 50px;
-    
-}
-p {
-    font-family: Montserrat;
-    font-size: 16px;
-}
+
 .navbar {
     
     display: flex;
     position: fixed; 
-    top: 0; 
-    flex-flow: row ;
+    top: 0;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: baseline;
     background-color: #3C4452;
     width: 100%;
     border: 5px solid grey;
+    height: 110px;
+    font-family: 'Lora';
+    font-size: 50em;
 }
 .navbar-item {
     
@@ -33,9 +27,11 @@ p {
     border-color: blue; 
     padding: 10px 10px 10px 10px;
     font-size: 32px;
+    text-decoration: none;
 }
 .navbar-item:hover {
-    color:#3089FF;
+    border-bottom:3px solid #fff;
+    
 }
 .valiotsikko {
     display: flex;
@@ -43,76 +39,164 @@ p {
     width: 100%;
     padding-top: 10%;
     padding-bottom: 10%;
+    font-family: 'Bitter';    
+    font-size: 4rem;
+}
+.valiotsikko-object {
+    border-bottom: 5px solid black;
+    
 }
 #infobox {
     box-sizing: border-box;
     display: flex;
-    width: 20%;
-    flex-wrap: wrap;
+    width: 50%;
+    
+    flex-direction: column;
     margin: 10% 10% 10% 10%;
     background-color: #59DEAF;
+    padding: 10% 10% 10% 10%;
+    border-radius: 100px;
     
 }
+#infobox h2 {
+    font-family: Lora;
+    font-size: 3rem;
+    }
+#infobox p {
+    margin-top: 0.5em;
+    font-family: 'Montserrat';
+}
+#infobox-button {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: #3089FF;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    color: #FFF;
+    font-family: Lora;
+    width: 30%;
+    padding: 1em;
+    text-decoration: none;
+}
+#infobox-button:hover {
+    background-color: rgb(36, 111, 209)
+}
+
 #home-container {
     background-color: #3C4452;
     display: flex;
     width: 100%;
-    margin-top: 300px;
-    margin-bottom: 200px;   
+    margin-top: 10em;
+    margin-bottom: 10em;   
+    justify-content: center;
+    
+}
+#about-background {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: #E8E8E8;
+    padding-top: 150px;
     justify-content: center;
 }
 #about-container {
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-    justify-content: center;
-    box-sizing: border-box;
-    border: 1px solid black;
+    
+    
     
 }
 #about-me {
-    width: 40%;
-    padding-right: 10%;
-    border: 1px solid black;
-    
-}
-#skills-section{
-    box-sizing: border-box;
-    border: 1px solid blue;
     display: flex;
     flex-flow: column wrap;
-    width: 20%
-}
-.skills-container {
+    justify-content: center;
+    width: 30%;
+    height: 250px;
+    padding-right: 10%;
     
-    width: 100%;
+    background-color: #59DEAF;
+    font-family: 'Montserrat';
+    padding: 3em;
+    border-radius: 50px;
+}
+#about-me h2 {
+    font-family: 'Lora';
+    font-size: 32px;
+}
+#skills-section{
+    
+    background-color: #59DEAF;
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 50px;
+    font-family: 'Lora';
+    font-size: 32px;
+}
+.skills-bar {
+    
+    width: 50%;
     background-color: #DCDCDC;
+    border-radius: 50px;
+    margin-top: 10px;
     
 }
 .skills {
+    box-sizing: border-box;
     display: flex;
-    justify-content: flex-end;
+    
     padding: 0.1em 1em 0.1em 1em;
     color: white;
+    font-family: 'Lora';
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+    
+    height: 100%;
+    
 }
 .html { width: 20%; background-color: green;}
 .css { width: 20%; background-color: blue;}
 .scala {width: 50%; background-color: purple;}
+
 .line-container {
     display:flex;
     width: 100%;
     justify-content: center;
 }
-#projects-container {
+#projects-background {
     box-sizing: border-box;
     display: flex;
     width: 100%;
-    height: 1000px;
+    
     background-color: #E8E8E8;
+    justify-content: center;
+    
+    
+}
+#projects-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center ;
+    margin: 10em 15em 10em 15em;
+    flex-flow: row wrap;
+}
+.projects-content {
+    padding: 1em;
+    transition: all .2s ease-in-out;
+}
+.projects-content:hover {
+    transform: scale(1.1);
+    filter: blur(2px);
 }
 .downwards-line {
     border-left: 6px solid green;
   height: 30px;
-  margin-left: -3px;
-  top: 0;
+  margin: 50px 0px 50px -3px;
+  
 }

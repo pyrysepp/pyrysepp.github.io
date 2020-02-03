@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta http-equiv="refresh" content="5" />
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Lora|Montserrat&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -27,10 +28,10 @@
         <div id="home"></div>
         <div id="home-container">
         <div id="infobox">
-          <h2>Hey, I'm Pyry Seppälä.</h2>
-          <p>Full time information networks student in Aalto University, Finland.
+          <h2 class="infobox-item">Hey, I'm Pyry Seppälä.</h2>
+          <p class="infobox-item">Full time information networks student in Aalto University, Finland.
           Interested in technology and society</p> 
-            <button><a href="#">View my projects!</a></button>
+            <a id="infobox-button" href="#projects">View my projects!</a>
         </div>
         </div>
 
@@ -40,31 +41,32 @@
 <!-- About section -->
 
         <div class="valiotsikko" id="about">
-            <h1>About</h1>
+            <h1 class="valiotsikko-object">About</h1>
         </div>
-        <div id="about-container">
+        <div id="about-background">
+        
         <div id="about-me">
             <h2>Who am I?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non lacus iaculis, imperdiet tellus ac, posuere elit. Integer bibendum vitae tellus et dignissim. Phasellus tincidunt feugiat nisi, vitae convallis risus varius at. Aliquam mattis vel lacus elementum molestie. Pellentesque scelerisque bibendum enim non accumsan
 
             </p>
         </div>
-
+        
 
         <!-- Skills section-->
 
         <div id="skills-section">
         <p>HTML</p>
-        <div class="skills-container">
+        <div class="skills-bar">
             <div class="skills html"><p>20%</p></div>
         </div>
         <p>CSS</p>
-        <div class="skills-container">
+        <div class="skills-bar">
             <div class="skills css"><p>20%</p></div>
         </div>
         
         <p>SCALA</p>
-        <div class="skills-container">
+        <div class="skills-bar">
             <div class="skills scala"><p>50%</p></div>
         </div>
         </div>
@@ -78,10 +80,15 @@
         <!-- projects osio -->
 
         <div class="valiotsikko" id="projects">
-            <h1>Projects</h1>
+            <h1 class="valiotsikko-object">Projects</h1>
         </div>
-        <div id="projects-container">
-
+        <div id="projects-background">
+            <div id="projects-container">
+            <img src="placeimg_300_300_tech.jpg" alt="Smiley face" class="projects-content">
+            <img src="placeimg_300_300_tech.jpg" alt="Smiley face" class="projects-content">
+            <img src="placeimg_300_300_tech.jpg" alt="Smiley face" class="projects-content">
+            <img src="placeimg_300_300_tech.jpg" alt="Smiley face" class="projects-content">
+        </div>
         </div>
         <!-- alaspäin oleva viiva-->
         <div class="line-container">
@@ -90,7 +97,7 @@
 
         <!-- contact osio-->
         <div class="valiotsikko" id="contact">
-            <h1>
+            <h1 class="valiotsikko-object">
                 Contact
             </h1>
         </div>
