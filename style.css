@@ -10,7 +10,7 @@ html, body {
 
 p {
     font-family: 'Montserrat';
-    font-size: 30px;
+    font-size: 18px;
 }
 h2 {
     font-family: 'Lora';
@@ -310,7 +310,7 @@ h1 {
         margin-right: 0px;
     }
     p {
-        font-size: 18px;
+        font-size: 30px;
     }
 
 }
