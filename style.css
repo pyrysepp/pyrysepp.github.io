@@ -9,14 +9,14 @@ html, body {
 }
 
 p {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 18px;
 }
 h2 {
-    font-family: 'Lora';
+    font-family: 'Lora', Arial, sans-serif;
 }
 h1 {
-    font-family: 'Bitter';
+    font-family: 'Bitter', serif;
 }
 
 .navbar {
@@ -40,7 +40,6 @@ h1 {
     padding: 10px 10px 10px 10px;
     font-size: 2.25em;
     text-decoration: none;
-    transition: all .3s ease-in-out;
 }
 .navbar-item:hover {
     border-bottom: 3px solid #fff;
@@ -272,7 +271,7 @@ h1 {
     background-color: rgba(0,0,0, 0.7);
     position: fixed;
     top: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     
@@ -284,14 +283,33 @@ h1 {
     position: absolute;
     border-radius: 10px;
     display: flex;
-    flex-flow: column;
     justify-content: center;
     align-items: center;
-
+    flex-flow: column wrap;
+    position: relative;
 
 }
-
-
+.modal-basic p {
+    margin-top: 1em;
+}
+.modal-basic .box-button {
+ margin-top: 1em;
+ font-size: 1em;
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    font-size: 2.5em;
+    right: 14px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.modal-close:hover {
+    transform: scale(1.5) rotate(135deg);
+    
+    
+}
 
 @media only screen and (max-width: 1050px) {
     
