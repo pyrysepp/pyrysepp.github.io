@@ -65,7 +65,7 @@ h1 {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 10em;
+    
 }
 
 #infobox {
@@ -78,6 +78,7 @@ h1 {
     background-color: #59DEAF;
     padding: 8%; 
     border-radius: 20px;
+    margin: 10em;
     
 }
 #infobox h1 {
@@ -116,7 +117,7 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 10%;
+    
     background-color: #E8E8E8;
     align-items: center;
     justify-content: center;
@@ -131,8 +132,9 @@ h1 {
     background-color: #59DEAF;
     padding: 3em;
     border-radius: 10px;
-    margin-bottom: 2.5em;
     
+    width: 60%;
+    margin: 10%;
 
 }
 #about-me h2 {
@@ -162,9 +164,9 @@ h1 {
     align-items: center;
     border-radius: 10px;
     box-shadow: 10px 10px 2px 0px rgba(0,0,0,0.3);
-    
+    width: 30%;
     padding: 30px;
-    
+    margin: 10%;
 }
 #language-section h2 {
     margin-bottom: 0.5em;
@@ -176,6 +178,7 @@ h1 {
 }
 #language-section p {
     margin: 0;
+    font-size: 24px;
 }
 
 
@@ -325,6 +328,10 @@ h1 {
     }
 }
 @media only screen and (max-width: 725px) {
+    .modal-basic {
+        width: 80%;
+    }
+    
     .navbar {
         height: 50px;
     }
@@ -366,13 +373,20 @@ h1 {
     #language-section p {
         font-size: 25px;
     }
+    #infobox {
+        margin: 2em;
+    }
     #infobox h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
     #infobox h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
     #infobox .box-button {
         font-size: 1em;
+    }
+    #about-me {
+        margin: 10%;
+        width: 80%;
     }
 }
