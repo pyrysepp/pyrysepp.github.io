@@ -76,7 +76,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: #59DEAF;
-    padding: 10%; 
+    padding: 8%; 
     border-radius: 20px;
     
 }
@@ -230,7 +230,7 @@ h1 {
     flex-direction: column;
 }
 
-#contact-box {
+.contact-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,16 +242,16 @@ h1 {
     box-shadow: 10px 10px 2px 0px rgba(0,0,0,0.3);
     
 }
-#contact-box h2 {
+.contact-box h2 {
     margin-bottom: 20px;
     font-size: 3em;
 }
-#contact-box p {
+.contact-box p {
     font-size: 2em;
     display: flex;    
     align-items: center;
 }
-#contact-box i {
+.contact-box i {
     padding-right: 20px;
     font-size: 70px;
 }
@@ -310,7 +310,14 @@ h1 {
     
     
 }
-
+@media only screen and (max-width: 1130px) {
+    #infobox h1 {
+        font-size: 3em;
+    }
+    #infobox h2 {
+        font-size: 1.8em;
+    }
+}
 @media only screen and (max-width: 1050px) {
     
     .projects-content {
@@ -319,16 +326,53 @@ h1 {
 }
 @media only screen and (max-width: 725px) {
     .navbar {
-        height: 200px;
+        height: 50px;
+    }
+    .navbar-item {
+        margin: 10px 10px;
+        padding: 3px 3px 3px 3px;
+        font-size: 1.25em;
     }
     .projects-content {
         margin-top: 1em;
         margin-bottom: 1em;
         margin-left: 0px;
         margin-right: 0px;
+    }   
+    .projects-content p {
+        font-size: 25px;
     }
-    p {
+    .projects-content h2 {
         font-size: 32px;
     }
-
+    p {
+        font-size: 16px;
+    }
+    .valiotsikko {
+        font-size: 2em
+    }
+    .contact-box p {
+        font-size: 16px;
+    }
+    .contact-box h2 {
+        font-size: 32px;
+    }
+    #language-section {
+        width: 100%;
+    }
+    #language-section h2 {
+        font-size: 32px;
+    }
+    #language-section p {
+        font-size: 25px;
+    }
+    #infobox h1 {
+        font-size: 40px;
+    }
+    #infobox h2 {
+        font-size: 30px;
+    }
+    #infobox .box-button {
+        font-size: 1em;
+    }
 }

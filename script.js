@@ -1,4 +1,4 @@
-window.onload=function(){
+
     document.getElementById('mywebsite_button').addEventListener('click', 
 function() {
     document.querySelector('.modal-bg').style.display = 'flex';
@@ -9,4 +9,4 @@ function() {
         document.querySelector('.modal-bg').style.display = 'none';
     });
     
-}
+
